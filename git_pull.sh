@@ -24,7 +24,7 @@ ContentNewTask=${ShellDir}/new_task
 ContentDropTask=${ShellDir}/drop_task
 SendCount=${ShellDir}/send_count
 isTermux=${ANDROID_RUNTIME_ROOT}${ANDROID_ROOT}
-ScriptsURL=https://gitee.com/lxk0301/jd_scripts
+ScriptsURL=git@gitee.com:lxk0301/jd_scripts
 ShellURL=https://github.com/llllcccjjj/jd-base
 Scripts2URL=https://github.com/llllcccjjj/Ownusing_jd
 
