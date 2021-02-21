@@ -42,7 +42,7 @@ function Update_Cron {
   if [ -f ${ListCron} ]; then
     RanMin=$((${RANDOM} % 60))
     RanSleep=$((${RANDOM} % 56))
-    RanHourArray[0]=$((${RANDOM} % 3))
+    RanHourArray[0]=$((${RANDOM} % 12))
     for ((i=1; i<14; i++)); do
       j=$(($i - 1))
       tmp=$((${RANDOM} % 3 + ${RanHourArray[j]} + 2))
