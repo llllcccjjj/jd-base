@@ -27,11 +27,8 @@ RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories
                              openssl \
     && mkdir -p /root/.ssh \
     && echo ${KEY} > /root/.ssh/id_rsa \
-    && cat >/root/.ssh/config <<EOF \
-       Host gitee.com \
-       User git \
-       Identityfile ~/.ssh/id_rsa \
-       EOF \
+    && chmod 700 /root/.ssh/id_rsa \
+    && ssh-keyscan gitee.com > /root/.ssh/known_hosts \
     && rm -rf /var/cache/apk/* \
     && ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
     && echo "Asia/Shanghai" > /etc/timezone \
