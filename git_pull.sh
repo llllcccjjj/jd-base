@@ -43,7 +43,7 @@ function Update_Cron {
     RanMin=$((${RANDOM} % 60))
     RanSleep=$((${RANDOM} % 56))
     RanHourArray[0]=$((${RANDOM} % 3))
-    RanHourArray[1]=$((${RANDOM} % 4+12))
+    RanHourArray[1]=$((${RANDOM} % 12+12))
     RanHour=${RanHourArray[0]}
     for ((i=1; i<${#RanHourArray[*]}; i++)); do
       RanHour="${RanHour},${RanHourArray[i]}"
