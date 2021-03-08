@@ -72,14 +72,10 @@ function Combin_All {
   export JXNCTOKENS=$(Combin_Sub TokenJxnc)
   export BOOKSHOP_SHARECODES=$(Combin_Sub ForOtherBookShop)
   export JD_CASH_SHARECODES=$(Combin_Sub ForOtherCash)
-  export JDNIAN_SHARECODES=$(Combin_Sub ForOtherNian)
-  export JDNIANPK_SHARECODES=$(Combin_Sub ForOtherNianPk)
   export JDSXSY_SHARECODES=$(Combin_Sub ForOtherImmortal)
   export JDSGMH_SHARECODES=$(Combin_Sub ForOtherSgmh)
   export JSMOBILEFESTIVAL_SHARECODES=$(Combin_Sub ForOtherJdMobileFestival)
-  export JD818_SHARECODES=$(Combin_Sub ForOtherJd818)
-  export JDNY_SHARECODES=$(Combin_Sub ForOtherNY)
-  export JDGLOBAL_SHARECODES=$(Combin_Sub ForOtherGlobal)
+  export JDCFD_SHARECODES=$(Combin_Sub ForOtherCfd)
 }
 
 ## 转换JD_BEAN_SIGN_STOP_NOTIFY或JD_BEAN_SIGN_NOTIFY_SIMPLE
