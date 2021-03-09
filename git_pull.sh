@@ -193,13 +193,13 @@ function Notify_Version {
 function Npm_InstallSub {
   if [ -n "${isTermux}" ]
   then
-    npm install --no-bin-links || npm install --no-bin-links --registry=https://registry.npm.taobao.org
+    npm install --no-bin-links --registry=https://registry.npm.taobao.org
   elif ! type yarn >/dev/null 2>&1
   then
-    npm install || npm install --registry=https://registry.npm.taobao.org
+    npm install --registry=https://registry.npm.taobao.org
   else
     echo -e "检测到本机安装了 yarn，使用 yarn 替代 npm...\n"
-    yarn install || yarn install --registry=https://registry.npm.taobao.org
+    yarn install --registry=https://registry.npm.taobao.org
   fi
 }
 
